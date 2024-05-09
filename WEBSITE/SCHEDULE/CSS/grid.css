@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #0ae78b;
+    padding: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    border-radius: 20px;
+    border: 25px double black;
+}
+
+.grid-item {
+    background-color: rgb(237, 73, 198);
+    border: 3px solid black;
+    padding: 25.5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.itemtuesday {
+    padding: 70px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.itemwednesday2 {
+    padding: 114.5px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.itembreak {
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.it2082B {
+    padding: 79px;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.item2122C {
+    padding: 59px;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+.it2122Afriday {
+    padding: 23px;
+    grid-row-start: ;
+    grid-row-end: 9;
+}

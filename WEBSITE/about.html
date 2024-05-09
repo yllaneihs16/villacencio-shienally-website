@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY WEBSITE</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html"><strong>HOME</strong></a>
+        <a href="about.html"><strong>ABOUT</strong></a>
+        <a href="projects.html"><strong>PROJECTS</strong></a>
+        <a href="socials.html"><strong>SOCIALS</strong></a>
+    </nav>
+    <main>
+        <div class="left">
+            <p><strong><h2>DETAILS</strong></p></h2>
+            <p><i>NAME:</i> <br><strong>Shienally Villacencio </strong></p>
+            <p><i>ADDRESS:</i><br><strong> South Poblacion, San Juan, Abra</strong></p>
+            <p><i>BIRTHDATE:</i><br><strong>February 16, 2003</strong></p>
+            <p><i>COURSE:</i><br><strong>Bachelor of Science in Information Technology-3A</strong></p>
+           </div>
+
+           <div class="right">
+            <p><i>MOTTO IN LIFE</i> <strong> <br> <br>"JUST GO WITH THE FLOW"<br> <br></strong> Don't put too much pressure on yourself: <br>
+                let it flow naturally, as it is uncontrollable. <br>
+                It's you who will manage and embrace it's uniqueness. <br>
+                Don't rush, so you can understand the flow of life <br>
+                and allow things to unfold naturally.</p>
+           
+           </div>
+
+        <h2>NATURE: UNPAID THERAPHY</h2>
+<p><i><strong>"Life is full of experiences but nature give peace and love."</strong></i></p>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/apao.jfif" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/bucay.jfif" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/calaba.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+  <h2> HOBBY: PHOTOGRAPHY</h2>
+  <p>I wanna share my favorite photographs, hope you like it!</p>
+  <div class="row">
+    <div class="column">
+      <img src="img/roses.jfif" alt="Roses" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img/butterfly.jfif" alt="Butterfly" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img/white_flower.jfif" alt="White Flower" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="img/sky.jfif" alt="Sky" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/butterfly_flower.jpg" alt="Butterfly Flower" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/sunset.jfif" alt="Sunset" style="width:100%">
+      </div>
+  
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 WEBSITE.  ALL RIGHTS RESERVED</p>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,105 @@
+header {
+    background-color: rgb(255, 253, 253);
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #bdbebf;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  body {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    font-weight: 10px solid bolder;
+    color: black;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #48bfe3, #64dfdf, #a8dadc, #cdf0ea);
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  .grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    gap:0;
+    margin:0;
+  }
+
+  button {
+    background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #48bfe3, #64dfdf, #a8dadc, #cdf0ea);
+    display: inline-block;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    border: 10px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -15px;
+    background: transparent;
+   }
+   
+   button::after {
+    right: -15px;
+    background: transparent;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 55%;
+   }
+   
+   button:hover span {
+    color:black;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: white;
+    font-size: 60px;
+    transition: all 0.3s ease-in;
+   }
+   footer {
+    background-color:  rgb(255, 253, 253);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
