@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+  }
+
+  .left-side {
+    flex: 1;
+    margin-top: 72.5px;
+  }
+
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 73px;
+  }
+
+  .static {
+    background-color: #0f3e1f;
+    border:  #940a88;
+    margin-bottom: 3px;
+    height: 300px;
+   
+  }
+
+  .absolute {
+    margin-bottom: 3px;
+    height: 240px;
+    width: 725px;
+    background-color: #025942;
+    border:  #940a88;
+  }
+  .fixed {
+    position: fixed;
+    width: 1500px;
+    height: 80px;
+    top: 0;
+    background-color: #245e3f;
+  }
+
+  .sticky {
+    position: sticky;
+    margin-bottom: 3px;
+    top: 10px;
+    width: 725px;
+    height: 250px;
+    background-color: #3a8055;
+    border:  #940a88;
+  }

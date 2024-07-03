@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+  }
+
+  .left-side {
+    flex: 1;
+    margin-top: 72.5px;
+  }
+
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 73px;
+  }
+
+  .static {
+    background-color: #2D9596;
+    margin-bottom: 3px;
+    height: 300px;
+    border: 5px solid #67c6e3;
+  }
+
+  .absolute {
+    margin-bottom: 3px;
+    height: 240px;
+    width: 725px;
+    background-color: #9Ad0c2;
+    border:  #67c6e3;
+  }
+  .fixed {
+    position: fixed;
+    width: 1500px;
+    height: 80px;
+    top: 0;
+    background-color: #265073;
+  }
+
+  .sticky {
+    position: sticky;
+    margin-bottom: 3px;
+    top: 10px;
+    width: 725px;
+    height: 250px;
+    background-color: orangered;
+    border:  #67c6e3;
+  }

@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* 5 columns, responsive */
+  grid-auto-rows: auto; /* Automatically adjust row height based on content */
+  gap: 10px;
+  background-color: #f0f0f0; /* Gray background color */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.grid-item {
+  position: relative; /* Ensure items respect container size */
+}
+
+.grid-item img {
+  width: 100%; /* Ensure images take up full width of grid item */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space under images */
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,41 +1,40 @@
 header {
-  background-color: rgb(255, 253, 253);
-  color: black;
-  padding: 1px;
-  text-align: center;
-}
-
-nav {
-  background-color: #bdbebf;
-  padding: 7px;
-  text-align: center;
-}
-
-nav a {
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-}
-
-body {
-  text-align: center;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
-  font-weight: 10px solid bolder;
-  color: black;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #48bfe3, #64dfdf, #a8dadc, #cdf0ea);
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  padding: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-}
-
+    background-color: rgb(255, 253, 253);
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #bdbebf;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  body {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    font-weight: 10px solid bolder;
+    color: black;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #48bfe3, #64dfdf, #a8dadc, #cdf0ea);
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
   .grid-container {
     display:grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -47,10 +46,10 @@ main {
   button {
     background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #48bfe3, #64dfdf, #a8dadc, #cdf0ea);
     display: inline-block;
-    width: 120px;
-    height: 120px;
-    border-radius: 5px;
-    border: 5px solid black;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    border: 10px solid black;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;
@@ -91,16 +90,15 @@ main {
    }
    
    button span {
-    color: black;
-    font-size: 13px;
+    color: white;
+    font-size: 60px;
     transition: all 0.3s ease-in;
    }
-   
    footer {
     background-color:  rgb(255, 253, 253);
     color: black;
     text-align: center;
-    padding: 7px;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
